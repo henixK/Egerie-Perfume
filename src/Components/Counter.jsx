@@ -16,7 +16,7 @@ export default function Counter() {
     };
 
     return (
-        <div className="my-10 flex items-center gap-10 justify-center text-lg">
+        <div className="my-10 flex items-center gap-10 justify-center text-sm md:text-[28px]">
             <span className="border border-black p-2">15 ml</span>
             <div className="flex items-center gap-4 ">
                 <span className="">Q.TY</span>
