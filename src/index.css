@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definizione del font "Avenir" */
+@font-face {
+  font-family: "Avenir";
+  src: url("/public/Assets/Font/Body/AvenirNextLTPro-Regular.otf") format("opentype"),
+    url("/public/Assets/Font/Body/AvenirNextLTPro-It.otf") format("opentype"),
+    url("/public/Assets//Font/Body/AvenirNextLTPro-Bold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "Branch";
+  src: url("/public/Assets/Font/Titles/Branch.otf");
+}
+
+body {
+  font-family: "Avenir", sans-serif, Arial, Helvetica;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Branch", sans-serif, Arial, Helvetica;
+}
+
+h1 {
+  @apply text-3xl lg:text-7xl
+}
+
+h3 {
+  @apply text-beige
+}
