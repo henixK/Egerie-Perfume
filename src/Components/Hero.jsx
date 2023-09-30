@@ -5,7 +5,7 @@ import egerieLogo from "../../public/Assets/Logo-SVG/SVG/logo_egerie.svg";
 
 export default function Hero({ children }) {
     return (
-        <main className="h-screen bg-hero bg-cover bg-opacity-90">
+        <main className="h-[100dvh] lg:h-screen bg-hero bg-cover bg-opacity-90">
             <div className="flex justify-center flex-col items-center h-full relative lg:px-96">
                 {children}
                 <div className="flex flex-col justify-center items-center mb-32 lg:mb-32 relative">
