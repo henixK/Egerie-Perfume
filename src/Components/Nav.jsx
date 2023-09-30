@@ -9,7 +9,7 @@ export default function Nav() {
     };
 
     return (
-        <nav className="px-10 lg:p-14 absolute text-beige text-2xl uppercase w-full flex justify-end lg:justify-between lg:top-0 top-10 left-0">
+        <nav className="px-10 lg:p-14 absolute text-beige uppercase w-full flex justify-end lg:justify-between lg:top-0 top-10 left-0">
             <div className="lg:block hidden">
                 <ul className="flex gap-12">
                     <li>Shop</li>
