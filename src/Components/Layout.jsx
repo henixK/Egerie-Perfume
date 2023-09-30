@@ -1,4 +1,4 @@
-export default function Layout ({children, title, text, button}) {
+export default function Layout ({children}) {
     return (
         <section>
             <div className="flex flex-col lg:flex-row lg:h-screen">

@@ -3,16 +3,23 @@ import egerieLogo from "../../public/Assets/Logo-SVG/SVG/logo_egerie.svg";
 
 
 
-export default function Hero() {
+export default function Hero({ children }) {
     return (
-        <main className="h-screen bg-hero bg-cover bg-opacity-50">
-            <div className="flex justify-center flex-col items-center h-full relative  lg:px-96">
-                <img className="w-[300px] lg:w-[500px] mb-20 lg:my-28" src={egerieLogo} alt="" />
-                <p className="text-beige  absolute bottom-10 px-10 lg:hidden">Égérie is an olfactory ode to the magi- cal and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who expe- rience its spellbinding allure.</p>
-                <p className="hidden lg:block text-beige ">
-                    Égérie is an olfactory ode to the magical and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who experience its spellbinding allure.
-                    Let Égérie transport you to a realm where ancient legends and the es- sence of nature converge in perfect harmony, forever leaving a trail of magic and allure wherever you go.
-                </p>
+        <main className="h-screen bg-hero bg-cover bg-opacity-90">
+            <div className="flex justify-center flex-col items-center h-full relative lg:px-96">
+                {children}
+                <div className="flex flex-col justify-center items-center mb-32 lg:mb-32 relative">
+                    <img className="min-w-[300px] max-w-[350px] lg:min-w-[600px] lg:max-w-[650px] md:min-w-[500px] md:max-w-2xl lg:mt-32 lg:mb-20 md:mb-0" src={egerieLogo} alt="" />
+                    
+                </div>
+                <div className="absolute bottom-10">
+                <p className="text-beige text-base px-10 lg:hidden md:hidden">Égérie is an olfactory ode to the magical and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who experience its spellbinding allure.</p>
+                    <p className="hidden lg:block md:block text-beige lg:text-xl md:text-xl lg:px-96 md:px-24 md:text-center">
+                        Égérie is an olfactory ode to the magical and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who experience its spellbinding allure.
+                        Let Égérie transport you to a realm where ancient legends and the essence of nature converge in perfect harmony, forever leaving a trail of magic and allure wherever you go.
+                    </p>
+                </div>
+                
             </div>
         </main>
     )

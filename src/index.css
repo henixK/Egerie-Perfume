@@ -33,3 +33,7 @@ h1 {
 h3 {
   @apply text-beige
 }
+
+li {
+  @apply cursor-pointer hover:underline underline-offset-4
+}
