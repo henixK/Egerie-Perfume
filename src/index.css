@@ -27,11 +27,15 @@ h4 {
 }
 
 h1 {
-  @apply text-3xl lg:text-7xl
+  @apply text-3xl md:text-7xl
 }
 
 h3 {
   @apply text-beige
+}
+
+p {
+  @apply text-sm md:text-[28px] md:leading-[2.5rem]
 }
 
 li {
