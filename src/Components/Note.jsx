@@ -1,3 +1,6 @@
+import prodotto2 from "../../public/Assets/Immagini/foto3-prodotto.jpg";
+import modella2 from "../../public/Assets/Immagini/foto4-modella.jpg";
+
 const data = [
     {
         id: 1,
@@ -31,6 +34,7 @@ const data1 = [
     },
 ];
 
+
 const Square = ({ title, description }) => {
     return (
         <div className="w-full lg:w-[50%] h-[500px] bg-lavanda text-beige text-center px-10 py-12">
@@ -54,20 +58,25 @@ export function Notes() {
     );
 }
 
-const Pictures = ({ description, imageUrl, reverse }) => {
+const Pictures = ({ description, reverse }) => {
     return (
         <div className="w-full text-center">
             {reverse ? (
                 <>
                     <div className="w-full">
-                        <p className="mb-10">{description}</p>
-                        <img className="w-full lg:h-[600px]" src={imageUrl} alt="" />
+                        <p className="text-sm">{description}</p>
+                        <div className="">
+                            <img className="object-contain w-full lg:h-[600px]" src={prodotto2} alt="" />
+                        </div>
                     </div>
                 </>
             ) : (
                 <>
                     <div>
-                        <img className="w-full lg:h-[600px]" src={imageUrl} alt="" />
+                        <div className="">
+                            <img className="object-contain w-full lg:h-[600px]" src={modella2} alt="" />
+                        </div>
+
                         <p className="mt-10">{description}</p>
                     </div>
 
@@ -76,7 +85,6 @@ const Pictures = ({ description, imageUrl, reverse }) => {
         </div>
     );
 };
-
 export function Picture() {
     return (
         <div className="flex flex-col lg:flex-row gap-10 bg-white lg:my-10 lg:px-20">
@@ -84,12 +92,7 @@ export function Picture() {
                 <Pictures
                     key={data.id}
                     description={data.description}
-                    imageUrl={
-                        index % 2 === 0
-                            ? "URL_DELLE_IMMAGINI_PARI"
-                            : "URL_DELLE_IMMAGINI_DISPARI"
-                    }
-                    reverse={index % 2 == 0}
+                    reverse={index % 2 === 0}
                 />
             ))}
         </div>

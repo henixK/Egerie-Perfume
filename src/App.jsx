@@ -4,9 +4,10 @@ import Article from "./Components/Article";
 import Nav from "./Components/Nav";
 import perfume from "../public/Assets/Immagini/foto1-prodotto.jpg";
 import modella from "../public/Assets/Immagini/foto2-modella.jpg";
-import prodotto from "../public/Assets/Immagini/foto5-prodotto.png"
+import prodotto from "../public/Assets/Immagini/foto5-prodotto.png";
+
 import Counter from "./Components/Counter";
-import { Notes } from "./Components/Note";
+import { Notes, Picture } from "./Components/Note";
 
 
 
@@ -34,6 +35,7 @@ export default function App() {
           <Article title={"Égérie Eau de Parfum"} text={"Let Égérie transport you to a realm where ancient legends and the essence of nature converge in perfect harmony, forever leaving a trail of magic and allure wherever you go."} button={<Counter/>}/>
       </Layout>
       </div>
+      <Picture />
       <Notes/>
       
       
