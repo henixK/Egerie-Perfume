@@ -1,5 +1,3 @@
-import { url } from 'inspector';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [

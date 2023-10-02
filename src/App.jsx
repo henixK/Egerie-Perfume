@@ -56,7 +56,7 @@ export default function App() {
 
       {/* Description product*/}
       <Layout>
-        <div className="h-full w-full my-10 lg:my-0">
+        <div className="h-full w-full my-10 md:my-10">
           <img src={perfume} alt="" />
         </div>
         <Article title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
@@ -69,7 +69,7 @@ export default function App() {
 
 
       {/* product to buy for mobile */}
-      <div className="lg:hidden block">
+      <div className="lg:hidden block my-12">
         <Layout>
           <div className="w-full">
             <img className="lg:mb-0" src={prodotto} alt="" />
@@ -77,17 +77,18 @@ export default function App() {
           <Article title={"Égérie Eau de Parfum"} text={"Let Égérie transport you to a realm where ancient legends and the essence of nature converge in perfect harmony, forever leaving a trail of magic and allure wherever you go."} button={<Counter />} />
         </Layout>
       </div>
+
+      {/* description with image list */}
+      <div className="hidden md:block">
       <Picture />
-      <div className="lg:hidden">
-        <Carousel
-          cards={cards}
-          height="500px"
-          width="30%"
-          margin="0 auto"
-          offset={2}
-          showArrows={false}
-        />
       </div>
+
+      
+      <div className="md:hidden h-screen mt-40">
+        <Carousel/>
+      </div>
+
+
       {/* cards for desktop */}
       <div className="px-32 hidden lg:block mt-20">
         <div className="flex gap-10">

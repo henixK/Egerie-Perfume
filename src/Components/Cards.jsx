@@ -13,12 +13,12 @@ export default function Card({ title, description }) {
     });
     return (
         <animated.div
-            className="w-full min-h-[100px] max-h-[600px] mb-10"
+            className="w-[100%] md:w-full  md:min-h-[100px] md:max-h-[600px] h-[500px] mb-10"
             style={props3}
             onMouseEnter={() => setShown(true)}
             onMouseLeave={() => setShown(false)}
         >
-            <div className="w-full h-full bg-lavanda text-beige text-center p-7">
+            <div className="min-w-[300px] max-w-[400px] h-full bg-lavanda text-beige text-center p-10 md:p-7">
                 <h1>{title}</h1>
                 <p className="mt-10">{description}</p>
             </div>

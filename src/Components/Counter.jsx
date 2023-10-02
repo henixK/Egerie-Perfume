@@ -39,11 +39,11 @@ export default function Counter() {
                             </button>
                         </div>
                     </div>
-                    <button className="bg-lavanda md:block hidden uppercase p-3 text-beige absolute md:relative">add To cart</button>
+                    <button className="bg-lavanda md:block hidden uppercase p-3 text-beige absolute md:relative  ">add To cart</button>
                 </div>
             </div>
             <div className="md:hidden absolute inset-x-0 ">
-                <button className="bg-lavanda uppercase p-3 mx-10 text-beige md:relative">add To cart</button>
+                <button className="bg-lavanda uppercase p-3 mx-10 text-beige md:relative">add to cart</button>
             </div>
         </section>
 
