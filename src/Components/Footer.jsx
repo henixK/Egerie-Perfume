@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="bg-lavanda text-lg text-beige py-10 px-20 lg:px-32 flex justify-between items-center gap-30 flex-col lg:flex-row">
+        <footer className="bg-lavanda text-lg text-beige py-4 px-20 lg:px-32 flex justify-between items-center gap-30 flex-col lg:flex-row">
             <ul className="flex flex-col lg:flex-row text-center gap-4 lg:gap-10">
                 <p className="text-xl lg:hidden mb-2">Égérie Eau de Parfum</p>
                 <li>Home</li>

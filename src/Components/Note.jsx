@@ -21,14 +21,14 @@ const data1 = [
 
 const Pictures = ({ title, description, reverse }) => {
     return (
-        <div className="w-full text-center px-10">
+        <div className="w-full text-center px-10 my-20">
             {reverse ? (
                 <>
                     <div>
                         <div className="w-full lg:h-[800px]">
                             <img className="object-cover w-full h-full" src={prodotto2} alt="" />
                         </div>
-                        <div className="mt-12 px-10">
+                        <div className="mt-12">
                             <h1 className="mb-10">{title}</h1>
                             <p className="text-left">{description}</p>
                         </div>
@@ -37,7 +37,7 @@ const Pictures = ({ title, description, reverse }) => {
             ) : (
                 <>
                     <div className="w-full">
-                        <div className="mb-12 px-10">
+                        <div className="mb-12 ">
                             <h1 className="mb-10">{title}</h1>
                             <p className="text-left">{description}</p>
                         </div>
@@ -52,7 +52,7 @@ const Pictures = ({ title, description, reverse }) => {
 };
 export function Picture() {
     return (
-        <div className="flex flex-col lg:flex-row gap-10 bg-white lg:my-10 lg:px-20">
+        <div className="flex flex-col lg:flex-row gap-10 bg-white md:my-10 md:px-20">
             {data1.map((data, index) => (
                 <Pictures
                     key={data.id}

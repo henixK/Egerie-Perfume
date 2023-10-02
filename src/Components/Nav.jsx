@@ -18,7 +18,7 @@ export default function Nav() {
                 </ul>
             </div>
             <div className="">
-                <span className="hidden lg:block">menu</span>
+                <li className="hidden lg:block">menu</li>
                 <span
                     className="lg:hidden cursor-pointer z-[200]"
                     onClick={toggleMenu}

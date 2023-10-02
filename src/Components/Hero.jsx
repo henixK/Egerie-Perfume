@@ -16,7 +16,7 @@ export default function Hero({ children }) {
                 </div>
                 <div className="absolute bottom-10">
                 <p className="text-beige text-base px-10 lg:hidden md:hidden">Égérie is an olfactory ode to the magical and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who experience its spellbinding allure.</p>
-                    <p className="hidden lg:block md:block text-beige md:text-sm  lg:px-96 md:px-24 md:text-center">
+                    <p className="hidden lg:block md:block text-beige lg:px-[340px] md:px-10 md:text-center">
                         Égérie is an olfactory ode to the magical and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who experience its spellbinding allure.
                         Let Égérie transport you to a realm where ancient legends and the essence of nature converge in perfect harmony, forever leaving a trail of magic and allure wherever you go.
                     </p>
