@@ -21,12 +21,12 @@ const data = [
     id: 1,
     title: "Top Notes",
     description:
-      "Égérie opens with a burst of refre- shing notes that evoke the bubbling springs where Egeria was believed to have dwelled. Crisp green accords of fresh mint leaves and the sparkling essence of bergamot blend harmoniously, instantly captivating the senses and setting the stage for the enchanting journey ahead."
+      "Égérie opens with a burst of refreshing notes that evoke the bubbling springs where Egeria was believed to have dwelled. Crisp green accords of fresh mint leaves and the sparkling essence of bergamot blend harmoniously, instantly captivating the senses and setting the stage for the enchanting journey ahead."
   },
   {
     id: 2,
     title: "Heart Notes",
-    description: "As the fragrance unfolds, the heart notes come to life, exuding the essen- ce of the forest where Egeria was often sought by the virtuous King Numa Pompilius for her wisdom and counsel. Lush and verdant, the heart is a rich tapestry of delicate white florals, where the gentle caress of blooming jasmine and the sweet allure of neroli intertwine with the subtle grace of lotus flower. This floral symphony reflects the nymph's purity and grace, drawing you deeper into her mystical realm."
+    description: "As the fragrance unfolds, the heart notes come to life, exuding the essence of the forest where Egeria was often sought by the virtuous King Numa Pompilius for her wisdom and counsel. Lush and verdant, the heart is a rich tapestry of delicate white florals, where the gentle caress of blooming jasmine and the sweet allure of neroli intertwine with the subtle grace of lotus flower. This floral symphony reflects the nymph's purity and grace, drawing you deeper into her mystical realm."
   },
   {
     id: 3,
@@ -56,14 +56,14 @@ export default function App() {
 
       {/* Description product*/}
       <Layout>
-        <div className="h-full w-full">
+        <div className="h-full w-full my-10 lg:my-0">
           <img src={perfume} alt="" />
         </div>
         <Article title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
       </Layout>
 
 
-      <div className="w-full h-full lg:mt-10">
+      <div className="w-full h-full  lg:mt-10">
         <img className="" src={modella} alt="" />
       </div>
 
@@ -72,7 +72,7 @@ export default function App() {
       <div className="lg:hidden block">
         <Layout>
           <div className="w-full">
-            <img className=" lg:mb-0" src={prodotto} alt="" />
+            <img className="lg:mb-0" src={prodotto} alt="" />
           </div>
           <Article title={"Égérie Eau de Parfum"} text={"Let Égérie transport you to a realm where ancient legends and the essence of nature converge in perfect harmony, forever leaving a trail of magic and allure wherever you go."} button={<Counter />} />
         </Layout>
@@ -100,7 +100,7 @@ export default function App() {
           <div className="w-full">
             <img className="lg:mb-0" src={prodotto} alt="" />
           </div>
-          <Article title={"Égérie Eau de Parfum"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mysti- cal realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<Counter />} />
+          <Article title={"Égérie Eau de Parfum"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<Counter />} />
         </Layout>
       </div>
       <Footer/>

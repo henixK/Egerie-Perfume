@@ -18,7 +18,7 @@ export default {
         Branch: ["Branch"],
       },
       backgroundImage: {
-        'hero': 'url("/public/Assets/Immagini/header.png")', 
+        'hero': 'url("/public/Assets/Immagini/header.jpg")', 
       }
     },
   },
