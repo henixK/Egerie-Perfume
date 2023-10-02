@@ -11,8 +11,8 @@ export default function Hero({ children }) {
                 <div>
                     
                 </div>
-                <div className="flex flex-col justify-center items-center mb-32 lg:mb-32 relative min-w-[280px] max-w-[320px] lg:min-w-[600px] lg:max-w-[650px] md:min-w-[500px] md:max-w-2xl">
-                    <img className="lg:mt-32 lg:mb-20 md:mb-0" src={egerieLogo} alt="" />
+                <div className="flex flex-col justify-center items-center mb-32 lg:mb-32 relative min-w-[280px] max-w-[320px] md:min-w-[550px] md:max-w-2xl">
+                    <img className="lg:mt-32 lg:mb-20 md:mb-0 object-cover" src={egerieLogo} alt="" />
                 </div>
                 <div className="absolute bottom-10">
                 <p className="text-beige text-base px-10 lg:hidden md:hidden">Égérie is an olfactory ode to the magical and mysterious, a fragrance that will evoke a sense of wonder and grace, captivating the hearts of all who experience its spellbinding allure.</p>
