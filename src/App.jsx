@@ -62,8 +62,8 @@ export default function App() {
         <Article title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
       </Layout>
 
-
-      <div className="w-full h-full  lg:mt-10">
+      {/* modella desktop */}
+      <div className="w-full h-full md:block hidden lg:mt-10">
         <img className="" src={modella} alt="" />
       </div>
 
@@ -80,15 +80,16 @@ export default function App() {
 
       {/* description with image list */}
       <div className="hidden md:block">
-      <Picture />
+        <Picture />
       </div>
 
-      
-      <div className="md:hidden h-screen mt-40">
-        <Carousel/>
+      <div className="md:hidden block mt-40 mb-20">
+        <Carousel />
       </div>
-
-
+      {/* modella mobile */}
+      <div className="w-full h-full md:hidden block mb-20">
+        <img className="" src={modella} alt="" />
+      </div>
       {/* cards for desktop */}
       <div className="px-32 hidden lg:block mt-20">
         <div className="flex gap-10">
@@ -104,7 +105,7 @@ export default function App() {
           <Article title={"Égérie Eau de Parfum"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<Counter />} />
         </Layout>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

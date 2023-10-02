@@ -101,7 +101,7 @@ export default class Example extends Component {
             <div
                 onTouchStart={this.handleTouchStart}
                 onTouchMove={this.handleTouchMove}
-                className="h-[400px] "
+                className="h-[400px] border-2 border-black"
             >
                 <Carousel
                     slides={this.slides}
