@@ -18,7 +18,6 @@ const data1 = [
 ];
 
 
-
 const Pictures = ({ title, description, reverse }) => {
     return (
         <div className="w-full text-center px-10 my-20">

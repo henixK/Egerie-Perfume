@@ -13,6 +13,7 @@ import perfume from "../public/Assets/Immagini/foto1-prodotto.jpg";
 import modella from "../public/Assets/Immagini/foto2-modella.jpg";
 import prodotto from "../public/Assets/Immagini/foto5-prodotto.png";
 import Footer from "./Components/Footer";
+import NoteMobile from "./Components/NoteMobile";
 
 
 
@@ -56,7 +57,7 @@ export default function App() {
 
       {/* Description product*/}
       <Layout>
-        <div className="h-full w-full my-10 md:my-10">
+        <div className="h-full w-full mt-10 md:my-10 ">
           <img src={perfume} alt="" />
         </div>
         <Article title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
@@ -67,9 +68,8 @@ export default function App() {
         <img className="" src={modella} alt="" />
       </div>
 
-
       {/* product to buy for mobile */}
-      <div className="lg:hidden block my-12">
+      <div className="lg:hidden block my-10">
         <Layout>
           <div className="w-full">
             <img className="lg:mb-0" src={prodotto} alt="" />
@@ -82,14 +82,14 @@ export default function App() {
       <div className="hidden md:block">
         <Picture />
       </div>
-
       <div className="md:hidden block mt-40 mb-20">
         <Carousel />
       </div>
       {/* modella mobile */}
-      <div className="w-full h-full md:hidden block mb-20">
+      <div className="w-full h-full md:hidden block mb-10">
         <img className="" src={modella} alt="" />
       </div>
+      <NoteMobile />
       {/* cards for desktop */}
       <div className="px-32 hidden lg:block mt-20">
         <div className="flex gap-10">
