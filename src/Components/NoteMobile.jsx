@@ -22,8 +22,8 @@ const Note = ({ title, description }) => {
     return (
         <div>
             <div className="px-10 my-12">
-                <h1 className="mb-5">{title}</h1>
-                <p>{description}</p>
+                <h1 className="mb-3">{title}</h1>
+                <p className="text-center">{description}</p>
             </div>
         </div>
     )

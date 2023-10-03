@@ -20,7 +20,7 @@ const data1 = [
 
 const Pictures = ({ title, description, reverse }) => {
     return (
-        <div className="w-full text-center px-10 my-20">
+        <div className="w-full px-10 my-20">
             {reverse ? (
                 <>
                     <div>
@@ -28,8 +28,8 @@ const Pictures = ({ title, description, reverse }) => {
                             <img className="object-cover w-full h-full" src={prodotto2} alt="" />
                         </div>
                         <div className="mt-12">
-                            <h1 className="mb-10">{title}</h1>
-                            <p className="text-left">{description}</p>
+                            <h1 className="mb-10 text-center">{title}</h1>
+                            <p className="text-justify">{description}</p>
                         </div>
                     </div>
                 </>
@@ -37,8 +37,8 @@ const Pictures = ({ title, description, reverse }) => {
                 <>
                     <div className="w-full">
                         <div className="mb-12 ">
-                            <h1 className="mb-10">{title}</h1>
-                            <p className="text-left">{description}</p>
+                            <h1 className="mb-10 text-center">{title}</h1>
+                            <p className="text-justify">{description}</p>
                         </div>
                         <div className="w-full lg:h-[800px]">
                             <img className="object-cover w-full h-full" src={modella2} alt="" />
