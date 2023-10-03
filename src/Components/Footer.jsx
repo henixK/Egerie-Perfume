@@ -9,7 +9,9 @@ export default function Footer() {
                 <li>About</li>
             </ul>
             <div className="mt-10 lg:mt-0 px-18 ">
-            <p className="text-base">&copy; 2023 Allison Salvador &amp; Evelina Maoctoe. All rights reserved.</p>
+                <p className="text-base">
+                    &copy; 2023 Project by Allison Salvador &amp; Evelina Macovei, Developed by Kevin Bautista. All Rights Reserved.
+                </p>
             </div>
         </footer>
     )
