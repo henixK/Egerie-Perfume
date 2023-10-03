@@ -79,7 +79,7 @@ export default function App() {
       </div>
 
       {/* description with image list */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Picture />
       </div>
       <div className="md:hidden block mt-40 mb-20">
@@ -95,9 +95,9 @@ export default function App() {
         <div className="flex gap-10">
           {cards}
         </div>
-        {/* product to buy for desktop */}
       </div>
-      <div className="hidden lg:block">
+      {/* product to buy for desktop */}
+      <div className="hidden md:block">
         <Layout>
           <div className="w-full">
             <img className="lg:mb-0" src={prodotto} alt="" />
