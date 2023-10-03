@@ -14,7 +14,7 @@ React: The project is developed using the React JavaScript library, making it a 
 Tailwind CSS: Tailwind CSS is used for styling the website, providing a clean and modern design.
 
 ## Features
-- Homepage: The homepage introduces users to the Egerie Perfume, featuring a stunning visual presentation.
+- Homepage: The homepage introduces users to the Egerie Perfume, featuring a visual presentation.
 
 - Product Description: Detailed product information is provided to give users an insight into the fragrance's inspiration and allure.
 
@@ -23,6 +23,8 @@ Tailwind CSS: Tailwind CSS is used for styling the website, providing a clean an
 - Mobile Compatibility: The website is designed to be responsive, ensuring an optimal viewing experience on various devices.
 
 - Interactive Carousel: An interactive image carousel and card display provide an engaging experience for users.
+
+Netlify: https://egerieparfum.netlify.app/
 
 ## Acknowledgments
 
