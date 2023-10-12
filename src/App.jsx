@@ -8,6 +8,9 @@ import Counter from "./Components/Counter";
 import { Picture } from "./Components/Note";
 import Card from "./Components/Cards";
 
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 // import foto
 import perfume from "../public/Assets/Immagini/foto1-prodotto.jpg";
 import modella from "../public/Assets/Immagini/foto2-modella.jpg";
@@ -47,7 +50,8 @@ const cards = data.map((data) => (
 
 
 export default function App() {
-
+  const ref = useRef(null)
+  const isInView = useInView(ref)
   return (
     <>
       {/* hero section with nav */}
@@ -57,10 +61,20 @@ export default function App() {
 
       {/* Description product*/}
       <Layout>
-        <div className="h-full w-full mt-10 md:my-10 ">
-          <img src={perfume} alt="" />
+        <div ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-100px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+          }}
+          className="h-full w-full mt-10 md:mt-20 lg:mt-0 overflow-hidden">
+          <img className="h-full w-full object-cover" src={perfume} alt="" />
         </div>
-        <Article title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
+        <Article ref={ref} style={{
+          transform: isInView ? "none" : "translateX(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+        }} title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
       </Layout>
 
       {/* modella desktop */}
@@ -98,12 +112,12 @@ export default function App() {
       </div>
       {/* product to buy for desktop */}
       <div className="hidden md:block">
-        <Layout>
-          <div className="w-full">
-            <img className="lg:mb-0" src={prodotto} alt="" />
+        <div className="flex h-screen items-center px-20 py-10">
+          <div className="w-full h-full botder-2 border-black ">
+            <img className="w-full h-full lg:mb-0 object-contain" src={prodotto} alt="" />
           </div>
           <Article title={"Égérie Eau de Parfum"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<Counter />} />
-        </Layout>
+        </div>
       </div>
       <Footer />
     </>

@@ -13,7 +13,7 @@ export default function Card({ title, description }) {
     });
     return (
         <animated.div
-            className="w-[100%] md:w-full md:min-h-[100px] md:max-h-[600px] h-[460px] mb-10"
+            className="w-[100%] md:w-full md:min-h-[550px] md:max-h-[600px] h-[460px]"
             style={props3}
             onMouseEnter={() => setShown(true)}
             onMouseLeave={() => setShown(false)}

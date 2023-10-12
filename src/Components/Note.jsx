@@ -1,6 +1,7 @@
 import prodotto2 from "../../public/Assets/Immagini/foto3-prodotto.jpg";
 import modella2 from "../../public/Assets/Immagini/foto4-modella.jpg";
-
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 
 const data1 = [
@@ -19,11 +20,20 @@ const data1 = [
 
 
 const Pictures = ({ title, description, reverse }) => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
     return (
-        <div className="w-full px-10 my-20">
+        <div
+
+            className="w-full px-10 my-20">
             {reverse ? (
                 <>
-                    <div>
+                    <div ref={ref} style={{
+                        transform: isInView ? "none" : "translateX(-100px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+                    }}>
                         <div className="w-full lg:h-[800px]">
                             <img className="object-cover w-full h-full" src={prodotto2} alt="" />
                         </div>
@@ -35,7 +45,12 @@ const Pictures = ({ title, description, reverse }) => {
                 </>
             ) : (
                 <>
-                    <div className="w-full">
+                    <div className="w-full"
+                        ref={ref} style={{
+                            transform: isInView ? "none" : "translateX(100px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+                        }}>
                         <div className="mb-12 ">
                             <h1 className="mb-10 text-center">{title}</h1>
                             <p className="text-justify">{description}</p>
