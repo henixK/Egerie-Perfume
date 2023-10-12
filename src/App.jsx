@@ -63,7 +63,7 @@ export default function App() {
       <Layout>
         <div ref={ref}
           style={{
-            transform: isInView ? "none" : "translateX(-100px)",
+            transform: isInView ? "none" : "translateX(-40px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
           }}
@@ -71,7 +71,7 @@ export default function App() {
           <img className="h-full w-full object-cover" src={perfume} alt="" />
         </div>
         <Article ref={ref} style={{
-          transform: isInView ? "none" : "translateX(100px)",
+          transform: isInView ? "none" : "translateX(40px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
         }} title={"A Fragrance Inspired by the Legend of the Nymph Egeria"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<button className="my-10 uppercase relative hover:underline underline-offset-8">Learn more</button>} />
