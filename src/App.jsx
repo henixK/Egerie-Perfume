@@ -112,7 +112,7 @@ export default function App() {
       </div>
       {/* product to buy for desktop */}
       <div className="hidden md:block">
-        <div className="flex h-screen items-center px-20 py-10">
+        <div className="flex gap-20 h-screen items-center px-20 py-10">
           <div className="w-full h-full botder-2 border-black ">
             <img className="w-full h-full lg:mb-0 object-contain" src={prodotto} alt="" />
           </div>
