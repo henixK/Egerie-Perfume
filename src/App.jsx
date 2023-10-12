@@ -78,12 +78,12 @@ export default function App() {
       </Layout>
 
       {/* modella desktop */}
-      <div className="w-full h-full md:block hidden lg:mt-10">
+      <div className="w-full h-full md:block hidden">
         <img className="" src={modella} alt="" />
       </div>
 
       {/* product to buy for mobile */}
-      <div className="lg:hidden block my-10">
+      <div className="lg:hidden block">
         <Layout>
           <div className="w-full">
             <img className="lg:mb-0" src={prodotto} alt="" />
@@ -105,7 +105,7 @@ export default function App() {
       </div>
       <NoteMobile />
       {/* cards for desktop */}
-      <div className="px-32 hidden lg:block mt-20">
+      <div className="px-32 hidden lg:block">
         <div className="flex gap-10">
           {cards}
         </div>
