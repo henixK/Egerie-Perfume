@@ -67,7 +67,7 @@ export default function App() {
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
           }}
-          className="lg:w-1/2 md:w-[400px] mt-10 md:mt-20 lg:mt-0 overflow-hidden">
+          className="lg:w-[500px] md:w-[500px] lg:h-[700px]  mt-10  lg:mt-0 overflow-hidden">
           <img className="h-full w-full object-cover" src={perfume} alt="" />
         </div>
         <Article ref={ref} style={{
