@@ -26,7 +26,7 @@ const Pictures = ({ title, description, reverse }) => {
     return (
         <div
 
-            className="w-full px-10 my-20">
+            className="w-full  my-20">
             {reverse ? (
                 <>
                     <div ref={ref} style={{
@@ -66,7 +66,7 @@ const Pictures = ({ title, description, reverse }) => {
 };
 export function Picture() {
     return (
-        <div className="flex flex-col lg:flex-row gap-10 bg-white md:my-10 md:px-20">
+        <div className="flex flex-col lg:flex-row gap-10 bg-white md:my-10 md:px-32">
             {data1.map((data, index) => (
                 <Pictures
                     key={data.id}

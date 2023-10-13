@@ -67,7 +67,7 @@ export default function App() {
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
           }}
-          className="h-full w-full mt-10 md:mt-20 lg:mt-0 overflow-hidden">
+          className="lg:w-1/2 md:w-[400px] mt-10 md:mt-20 lg:mt-0 overflow-hidden">
           <img className="h-full w-full object-cover" src={perfume} alt="" />
         </div>
         <Article ref={ref} style={{
@@ -112,9 +112,9 @@ export default function App() {
       </div>
       {/* product to buy for desktop */}
       <div className="hidden md:block">
-        <div className="flex gap-20 h-screen items-center px-20 py-10">
-          <div className="w-full h-full botder-2 border-black ">
-            <img className="w-full h-full lg:mb-0 object-contain" src={prodotto} alt="" />
+        <div className="flex gap-10 h-screen items-center px-32 py-10 ">
+          <div className="lg:w-1/2 ">
+            <img className="w-full h-full lg:mb-0 object-fill" src={prodotto} alt="" />
           </div>
           <Article title={"Égérie Eau de Parfum"} text={"Step into a mesmerizing world of mythical allure with Égérie, a captivating fragrance that pays homage to the legendary nymph Egeria. Drawing inspiration from the enchanting tales of ancient Rome, this perfume transports you to a lush, mystical realm where nature's beauty and a nymph's allure intertwine in a dance of ethereal elegance."} button={<Counter />} />
         </div>
